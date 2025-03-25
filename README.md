@@ -71,7 +71,7 @@ People's visit and people's order are different entities and don't contain any c
 ## Materials
 
 Materials that contribute to the completion of the task:
-- [Interactive SQL Simulator на Stepik](https://stepik.org/course/63054/syllabus)
+- [Interactive SQL Simulator on Stepik](https://stepik.org/course/63054/syllabus)
 - [Interactive course on SQL — SQL Academy](https://sql-academy.org/ru/guide)
 - And Yandex Search 😊
 
