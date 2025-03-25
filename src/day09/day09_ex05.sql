@@ -16,4 +16,3 @@ from fnc_persons(pgender := 'male');
 
 select *
 from fnc_persons();
-

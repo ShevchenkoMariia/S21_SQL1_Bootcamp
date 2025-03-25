@@ -13,7 +13,6 @@ with orders as (
         order by count desc, name
 )
 
-select o.name as name, (o.count+v.count) as total_count 
+select o.name as name, (o.count+v.count) as total_count
 from orders o join visits v on o.name=v.name
 order by total_count desc, name asc;
-

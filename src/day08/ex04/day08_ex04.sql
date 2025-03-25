@@ -13,5 +13,5 @@ select name, rating from pizzeria where name = 'Pizza Hut';
 commit transaction;
 select name, rating from pizzeria where name = 'Pizza Hut';
 
--- 2 
+-- 2
 select name, rating from pizzeria where name = 'Pizza Hut';

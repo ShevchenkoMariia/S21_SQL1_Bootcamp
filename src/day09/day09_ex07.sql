@@ -1,4 +1,4 @@
-create or replace function func_minimum(variadic arr numeric[]) 
+create or replace function func_minimum(variadic arr numeric[])
 returns numeric AS $$
 begin
     return (select min(value) from unnest(arr) as value);

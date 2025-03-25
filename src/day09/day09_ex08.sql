@@ -13,4 +13,3 @@ $$ language sql;
 
 select * from fnc_fibonacci(100);
 select * from fnc_fibonacci();
-

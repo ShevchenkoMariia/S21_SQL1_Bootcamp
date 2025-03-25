@@ -1,9 +1,9 @@
 create or replace function fnc_persons_female()
-returns table( 
-	id bigint, 
-	name varchar, 
-	age integer, 
-	gender varchar, 
+returns table(
+	id bigint,
+	name varchar,
+	age integer,
+	gender varchar,
 	address varchar)
 as $$
 	select * from person where gender = 'female';
@@ -25,4 +25,3 @@ FROM fnc_persons_male();
 
 SELECT *
 FROM fnc_persons_female();
-

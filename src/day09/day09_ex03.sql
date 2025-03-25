@@ -9,7 +9,7 @@ drop function if exists fnc_trg_person_delete_audit();
 drop trigger if exists trg_person_audit;
 drop function if exists fnc_trg_person_audit();
 
-create or replace function fnc_trg_person_audit() 
+create or replace function fnc_trg_person_audit()
 returns trigger as $$
 begin
 	if(tg_op = 'insert') then

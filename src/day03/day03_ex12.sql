@@ -1,5 +1,5 @@
 INSERT INTO person_order (id, person_id, menu_id, order_date)
-SELECT 
+SELECT
         generate_series(
                 (SELECT MAX(id)+1 FROM person_order),
                 (SELECT MAX(id) FROM person_order) +

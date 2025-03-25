@@ -1,6 +1,6 @@
-SELECT 
-        pr.name AS person_name, 
-        pizza_name, 
+SELECT
+        pr.name AS person_name,
+        pizza_name,
         pz.name AS pizzeria_name
   FROM person_order AS po
   JOIN person AS pr

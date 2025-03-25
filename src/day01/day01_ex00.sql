@@ -5,4 +5,4 @@ SELECT menu_id AS object_id, pizza_name AS object_name
 SELECT person_id AS object_id, name AS object_name
   FROM person_order, person
  WHERE person_order.person_id = person.id
- ORDER BY object_id, object_name;                                          
+ ORDER BY object_id, object_name;

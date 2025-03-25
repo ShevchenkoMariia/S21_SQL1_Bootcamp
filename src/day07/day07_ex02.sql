@@ -16,6 +16,6 @@ with orders as (
 )
 
 select * from orders
-union all 
+union all
 select * from visits
 order by action_type asc, count desc;

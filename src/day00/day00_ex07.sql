@@ -9,5 +9,5 @@ SELECT
                         ELSE 'interval #3'
                 END
         END AS interval_info
-FROM person
-ORDER BY interval_info ASC;
+  FROM person
+ ORDER BY interval_info ASC;

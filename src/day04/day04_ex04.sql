@@ -2,7 +2,7 @@ CREATE VIEW v_symmetric_union AS (
   WITH R AS (
         SELECT person_id
         FROM person_visits
-        WHERE visit_date = '2022-01-02'),     
+        WHERE visit_date = '2022-01-02'),
        S AS (
         SELECT person_id
         FROM person_visits

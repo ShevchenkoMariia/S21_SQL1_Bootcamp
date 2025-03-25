@@ -10,7 +10,7 @@ update pizzeria set rating = 2 where id = 2;
 -- 1
 update pizzeria set rating = 2 where id = 2;
 
--- 2 
+-- 2
 update pizzeria set rating = 3 where id = 1;
 
 -- 1-2

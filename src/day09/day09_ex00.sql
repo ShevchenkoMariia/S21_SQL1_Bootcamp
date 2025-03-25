@@ -1,12 +1,12 @@
 drop table if exists person_audit;
 
-create table person_audit 
-(created timestamp with time zone default current_timestamp not null, 
-type_event char(1) default 'I' not null, 
-row_id bigint not null, 
-name varchar, 
-age integer, 
-gender varchar, 
+create table person_audit
+(created timestamp with time zone default current_timestamp not null,
+type_event char(1) default 'I' not null,
+row_id bigint not null,
+name varchar,
+age integer,
+gender varchar,
 address varchar,
 constraint ch_type_event check (type_event in ('I', 'D', 'U')));
 
@@ -22,7 +22,7 @@ $$ language plpgsql;
 -- создание триггера
 create or replace trigger trg_person_insert_audit
 after insert on person
-for each row 
+for each row
 execute function fnc_trg_person_insert_audit();
 
 -- для проверки
@@ -36,4 +36,3 @@ where address = 'Irkutsk';
 
 delete from person_audit
 where address = 'Irkutsk';
-		
